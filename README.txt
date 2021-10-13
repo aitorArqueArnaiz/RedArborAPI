@@ -29,3 +29,9 @@ Update existing employee :
 
 Delete existing employee :
  curl -k -X DELETE -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee/{ID} -v
+
+
+ Docker :
+
+ There is a docker-compose that starts the service, but in this case it is not usefull because the connection string agaist data base utilizes Integrated Security = true.
+ In this dockerfile system this connection to the data base is not posible.
