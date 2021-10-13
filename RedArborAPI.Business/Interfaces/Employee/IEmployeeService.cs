@@ -1,10 +1,9 @@
-﻿
-using RedArborAPI.Domain.DTOs.Employees;
+﻿using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.DTOs.Employees;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RedArborAPI.Business.Interfaces
+namespace RedArborAPI.Business.Interfaces.EmployeeService
 {
     public interface IEmployeeService
     {

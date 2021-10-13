@@ -2,9 +2,9 @@
 using RedArborAPI.Domain.Base;
 using System;
 
-namespace RedArborAPI.Domain.DTOs.Employees
+namespace RedArborAPI.Domain.Entities.Employee
 {
-    public partial class Employee : BaseEntity
+    public class Employee : BaseEntity
     {
         /*
          * Example of employee DTO

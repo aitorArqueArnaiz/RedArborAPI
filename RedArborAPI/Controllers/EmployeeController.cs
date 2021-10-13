@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using RedArborAPI.Business.Interfaces;
-using RedArborAPI.Domain.DTOs.Employees;
+using RedArborAPI.Business.Interfaces.EmployeeService;
+using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.DTOs.Employees;
 using System;
 
@@ -33,8 +33,8 @@ namespace RedArborAPI.Controllers
 
             try
             {
-                var employee = _employeeService.GetEmployeeByIdAsync(id);
-                return Ok($"Employee with id : {id} has been succesfully found. Json with employe information is {JsonConvert.SerializeObject(employee.Result, Formatting.Indented)}");
+                var employeeResponse = _employeeService.GetEmployeeByIdAsync(id);
+                return Ok($"Employee with id : {id} has been succesfully found. Json with employe information is {JsonConvert.SerializeObject(employeeResponse.Result, Formatting.Indented)}");
             }
             catch (Exception ex)
             {

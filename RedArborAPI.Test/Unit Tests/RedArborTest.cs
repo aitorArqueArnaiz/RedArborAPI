@@ -1,8 +1,8 @@
 using Moq;
 using NUnit.Framework;
-using RedArborAPI.Business.Interfaces;
+using RedArborAPI.Business.Interfaces.EmployeeService;
 using RedArborAPI.Business.Services;
-using RedArborAPI.Domain.DTOs.Employees;
+using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.DTOs.Employees;
 using RedArborAPI.Infrastructure.Interfaces;
 using System;

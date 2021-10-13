@@ -1,5 +1,5 @@
-﻿using RedArborAPI.Business.Interfaces;
-using RedArborAPI.Domain.DTOs.Employees;
+﻿using RedArborAPI.Business.Interfaces.EmployeeService;
+using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.DTOs.Employees;
 using RedArborAPI.Infrastructure.Interfaces;
 using System;
