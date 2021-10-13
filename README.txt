@@ -17,19 +17,19 @@ Data Base :
 	MDF file in solution items folder with already some data created. Attach it to your local machine SQLServer with SQl Management Studio
 
 Add New Employee :
- curl -k -X POST -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee -v
+ curl -k -X POST -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/api/redarbor -v
 
 Get Employee By Id :
- curl -k -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee{ID}/ -v
+ curl -k -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/api/redarbor/{CompanyId} -v
 
 Get All Employees :
- curl -k -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee -v
+ curl -k -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/api/redarbor -v
 
 Update existing employee :
- curl -k -X PATCH -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee -v
+ curl -k -X PATCH -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/api/redarbor/{CompanyId} -v
 
 Delete existing employee :
- curl -k -X DELETE -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/Employee/{ID} -v
+ curl -k -X DELETE -H "Content-Type: application/json" -d @Example.json https://localhost:{PORT}/api/redarbor/{CompanyId} -v
 
 
  Docker :

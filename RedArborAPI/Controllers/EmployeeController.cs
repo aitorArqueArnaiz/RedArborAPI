@@ -9,7 +9,7 @@ using System;
 namespace RedArborAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/redarbor")]
     public class EmployeeController : ControllerBase
     {
 
