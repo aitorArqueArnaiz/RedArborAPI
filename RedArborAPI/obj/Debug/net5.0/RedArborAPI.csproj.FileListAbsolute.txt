@@ -63,3 +63,4 @@ C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI\bin\Debug\net5.0\System.Xml.XPa
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI\bin\Debug\net5.0\TimeZoneConverter.dll
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI\bin\Debug\net5.0\RedArborAPI.Business.dll
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI\bin\Debug\net5.0\RedArborAPI.Business.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI\obj\Debug\net5.0\RedArborAPI.MvcApplicationPartsAssemblyInfo.cs
