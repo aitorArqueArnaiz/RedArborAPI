@@ -12,3 +12,4 @@ debug
 /RedArborAPI.Infrastructure/obj
 /RedArborAPI.Test/bin
 /RedArborAPI.Test/obj
+/obj/Docker
