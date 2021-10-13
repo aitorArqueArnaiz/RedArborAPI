@@ -1,0 +1,17 @@
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.csproj.AssemblyReference.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.AssemblyInfoInputs.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.AssemblyInfo.cs
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.csproj.CoreCompileInputs.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Business.deps.json
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Business.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\ref\RedArborAPI.Business.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Business.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Domain.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Infrastructure.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Domain.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\bin\Debug\net5.0\RedArborAPI.Infrastructure.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.csproj.CopyComplete
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\ref\RedArborAPI.Business.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Business\obj\Debug\net5.0\RedArborAPI.Business.pdb

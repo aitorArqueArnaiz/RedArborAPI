@@ -8301,8 +8301,8 @@
     },
     "RedArborAPI.Business/1.0.0": {
       "type": "project",
-      "path": "../RedArborAPI.App/RedArborAPI.Business.csproj",
-      "msbuildProject": "../RedArborAPI.App/RedArborAPI.Business.csproj"
+      "path": "../RedArborAPI.Business/RedArborAPI.Business.csproj",
+      "msbuildProject": "../RedArborAPI.Business/RedArborAPI.Business.csproj"
     },
     "RedArborAPI.Domain/1.0.0": {
       "type": "project",
@@ -8349,8 +8349,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj": {
-              "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj"
+            "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Business\\RedArborAPI.Business.csproj": {
+              "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Business\\RedArborAPI.Business.csproj"
             }
           }
         }

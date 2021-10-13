@@ -9,4 +9,3 @@ C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Infrastructure\obj\Debug\net5.0
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Infrastructure\obj\Debug\net5.0\RedArborAPI.Infrastructure.dll
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Infrastructure\obj\Debug\net5.0\ref\RedArborAPI.Infrastructure.dll
 C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Infrastructure\obj\Debug\net5.0\RedArborAPI.Infrastructure.pdb
-C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Infrastructure\obj\Debug\net5.0\RedArborAPI.Infrastructure.csproj.AssemblyReference.cache

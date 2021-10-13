@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using RedArborAPI.App.Interfaces;
+using RedArborAPI.Business.Interfaces;
 using RedArborAPI.Domain.DTOs.Employees;
 using RedArborAPI.DTOs.Employees;
-using RedArborAPI.Services;
 using System;
 
 namespace RedArborAPI.Controllers

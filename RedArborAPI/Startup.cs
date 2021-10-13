@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using RedArborAPI.App.Interfaces;
+using RedArborAPI.Business.Interfaces;
+using RedArborAPI.Business.Services;
 using RedArborAPI.Infrastructure.Data.Repositories;
-using RedArborAPI.Services;
 
 namespace RedArborAPI
 {

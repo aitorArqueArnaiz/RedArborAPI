@@ -18,8 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.txt = README.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Business", "RedArborAPI.App\RedArborAPI.Business.csproj", "{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{F1E421B7-333F-4DD2-8BDF-92CE7E90F01E}"
 	ProjectSection(SolutionItems) = preProject
 		DB\Employees.mdf = DB\Employees.mdf
@@ -27,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{F1E421B7-333F-
 	EndProjectSection
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E893B125-25EF-4038-AD97-85A5DC6F4F55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Business", "RedArborAPI.Business\RedArborAPI.Business.csproj", "{F5C3635C-441E-46C1-9617-09D2C66D068D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,14 +50,14 @@ Global
 		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C3635C-441E-46C1-9617-09D2C66D068D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C3635C-441E-46C1-9617-09D2C66D068D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C3635C-441E-46C1-9617-09D2C66D068D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C3635C-441E-46C1-9617-09D2C66D068D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RedArborAPI.App\RedArborAPI.Business.csproj" />
+    <ProjectReference Include="..\RedArborAPI.Business\RedArborAPI.Business.csproj" />
   </ItemGroup>
 
 </Project>

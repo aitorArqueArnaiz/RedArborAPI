@@ -8584,8 +8584,8 @@
     },
     "RedArborAPI.Business/1.0.0": {
       "type": "project",
-      "path": "../RedArborAPI.App/RedArborAPI.Business.csproj",
-      "msbuildProject": "../RedArborAPI.App/RedArborAPI.Business.csproj"
+      "path": "../RedArborAPI.Business/RedArborAPI.Business.csproj",
+      "msbuildProject": "../RedArborAPI.Business/RedArborAPI.Business.csproj"
     },
     "RedArborAPI.Domain/1.0.0": {
       "type": "project",
