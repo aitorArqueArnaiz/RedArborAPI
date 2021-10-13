@@ -8,6 +8,7 @@ Domain-Driven-Developement
 2. Create the API (controllers, startup, error handling, logs , etc...)
 3. Create the service : Domin and business logics (depending on the controller)
 4. Create Unit Testing for basic flows (add, get, update and delete)
+5. Unit Testing
 
 
 How to test the project : Run it with IIS Express in local machine
