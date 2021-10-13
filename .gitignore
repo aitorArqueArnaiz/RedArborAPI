@@ -2,3 +2,13 @@
 bin
 object
 debug
+/RedArborAPI/bin
+/RedArborAPI/obj
+/RedArborAPI.Business/bin
+/RedArborAPI.Business/obj
+/RedArborAPI.Domain/bin
+/RedArborAPI.Domain/obj
+/RedArborAPI.Infrastructure/bin
+/RedArborAPI.Infrastructure/obj
+/RedArborAPI.Test/bin
+/RedArborAPI.Test/obj
