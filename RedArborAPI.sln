@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI", "RedArborAPI\RedArborAPI.csproj", "{2E84CA85-E51A-493E-9D4E-510E00C6C8F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Test", "RedArborAPI.Test\RedArborAPI.Test.csproj", "{5D7CF6B4-8C6D-4560-93EF-EC7EA3E8FABD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Domain", "RedArborAPI.Domain\RedArborAPI.Domain.csproj", "{6DEC7A3D-20D3-4F16-A7FA-1CBA7892D830}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Infrastructure", "RedArborAPI.Infrastructure\RedArborAPI.Infrastructure.csproj", "{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6C4A7E3-F50A-4DF4-A721-41A9DDAAA71E}"
+	ProjectSection(SolutionItems) = preProject
+		DDD And steps for implemetation.doc = DDD And steps for implemetation.doc
+		Example.json = Example.json
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedArborAPI.Business", "RedArborAPI.App\RedArborAPI.Business.csproj", "{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{F1E421B7-333F-4DD2-8BDF-92CE7E90F01E}"
+	ProjectSection(SolutionItems) = preProject
+		DB\Employees.mdf = DB\Employees.mdf
+		DB\Employees_log.ldf = DB\Employees_log.ldf
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E893B125-25EF-4038-AD97-85A5DC6F4F55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E84CA85-E51A-493E-9D4E-510E00C6C8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E84CA85-E51A-493E-9D4E-510E00C6C8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E84CA85-E51A-493E-9D4E-510E00C6C8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E84CA85-E51A-493E-9D4E-510E00C6C8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7CF6B4-8C6D-4560-93EF-EC7EA3E8FABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7CF6B4-8C6D-4560-93EF-EC7EA3E8FABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7CF6B4-8C6D-4560-93EF-EC7EA3E8FABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7CF6B4-8C6D-4560-93EF-EC7EA3E8FABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEC7A3D-20D3-4F16-A7FA-1CBA7892D830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEC7A3D-20D3-4F16-A7FA-1CBA7892D830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEC7A3D-20D3-4F16-A7FA-1CBA7892D830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEC7A3D-20D3-4F16-A7FA-1CBA7892D830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3F974D-00AE-46EF-BCC4-B82C73816CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4ED33E-95D3-4F51-A64E-2915B5C80A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E893B125-25EF-4038-AD97-85A5DC6F4F55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1E421B7-333F-4DD2-8BDF-92CE7E90F01E} = {A6C4A7E3-F50A-4DF4-A721-41A9DDAAA71E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73B873BA-23BA-4F34-9838-5A110717ED50}
+	EndGlobalSection
+EndGlobal

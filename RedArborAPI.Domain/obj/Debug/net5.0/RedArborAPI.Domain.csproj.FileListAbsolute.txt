@@ -1,0 +1,15 @@
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\RedArborAPI.Domain.deps.json
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\RedArborAPI.Domain.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\ref\RedArborAPI.Domain.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\RedArborAPI.Domain.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.AssemblyInfo.cs
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\ref\RedArborAPI.Domain.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\RedArborAPI.Infrastructure.dll
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\bin\Debug\net5.0\RedArborAPI.Infrastructure.pdb
+C:\Users\aitor\Downloads\RedArborAPI\RedArborAPI.Domain\obj\Debug\net5.0\RedArborAPI.Domain.csproj.CopyComplete

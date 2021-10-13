@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI\\RedArborAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj",
+        "projectName": "RedArborAPI.Business",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj",
+        "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\RedArborAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\RedArborAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\RedArborAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\RedArborAPI.Domain.csproj",
+        "projectName": "RedArborAPI.Domain",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\RedArborAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\RedArborAPI.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\RedArborAPI.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Abp": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\RedArborAPI.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\RedArborAPI.Infrastructure.csproj",
+        "projectName": "RedArborAPI.Infrastructure",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\RedArborAPI.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Ado": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.4, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI\\RedArborAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI\\RedArborAPI.csproj",
+        "projectName": "RedArborAPI",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI\\RedArborAPI.csproj",
+        "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj": {
+                "projectPath": "C:\\Users\\aitor\\Downloads\\RedArborAPI\\RedArborAPI.App\\RedArborAPI.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
