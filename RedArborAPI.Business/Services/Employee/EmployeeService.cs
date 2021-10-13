@@ -181,6 +181,7 @@ namespace RedArborAPI.Business.Services
         {
             if(employeeFromDb == null || employeeFromDb.Count != 14)
             {
+                Serilog.Log.ForContext<EmployeeService>().Warning($"Error parsing employe string from the data base.");
                 return new Employee();
             }
             return new Employee()
