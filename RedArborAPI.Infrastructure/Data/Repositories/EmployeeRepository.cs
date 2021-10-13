@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace RedArborAPI.Infrastructure.Data.Repositories
@@ -12,13 +13,21 @@ namespace RedArborAPI.Infrastructure.Data.Repositories
         #region Class variables/properties
 
 
-            private const string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Employees;"
-            + "Integrated Security=true;";
+            private string connectionString;
 
         #endregion
 
         public EmployeeRepository() : base()
         {
+            if (File.Exists(Directory.GetCurrentDirectory() + "ConnectionString.txt"))
+            {
+                this.connectionString = File.ReadAllText(Directory.GetCurrentDirectory() + "ConnectionString.txt");
+            }
+            else
+            {
+                this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Employees;"
+                    + "Integrated Security=true;";
+            }
         }
 
             #region Class Methods
