@@ -47,9 +47,10 @@ namespace RedArborAPI.UnitTests.Test
             public void AddEmployeeEntity()
             {
                 // Arrange
+                Random random = new Random();
                 AddEmployeeRequest employeeModel = new AddEmployeeRequest()
                 {
-                    CompanyId = new Random(100).Next(),
+                    CompanyId = random.Next(0, 9999),
                     CreatedOn = new DateTime().ToUniversalTime(),
                     DeletedOn = new DateTime().ToUniversalTime(),
                     Email = "test@gmail.com",
@@ -99,9 +100,10 @@ namespace RedArborAPI.UnitTests.Test
             public void UpdateEmployeeEntity()
             {
                 // Arrange
+                Random random = new Random();
                 UpdateEmployeeRequest employeeModel = new UpdateEmployeeRequest()
                 {
-                    CompanyId = new Random(100).Next(),
+                    CompanyId = random.Next(0, 9999),
                     CreatedOn = new DateTime().ToUniversalTime(),
                     DeletedOn = new DateTime().ToUniversalTime(),
                     Email = "test@gmail.com",
