@@ -104,7 +104,7 @@ namespace RedArborAPI.Business.Services
         public async Task<Employee> GetEmployeeByIdAsync(int? id)
         {
             var employee = _employeeRepository.GetAsync(GetEmployeeByIdSQLQueryString(id));
-            var employeeClean = employee.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            var employeeClean = employee == null ? null : employee.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
             return createEmployeeEntity(employeeClean);
         }
 

@@ -78,6 +78,20 @@ namespace RedArborAPI.UnitTests.Test
             }
 
             [Test]
+            [Description("Test intended to reproduce the service flow for adding a new employee entity")]
+            [Author("Aitor Arqué Arnaiz")]
+            public void AddEmployeeEntity_Error_NullId()
+            {
+                // Arrange
+
+                // Act
+                Task<Employee> addEmployeeResponse = _employeeService.GetEmployeeByIdAsync(null);
+
+                // Assert
+                Assert.IsNotNull(addEmployeeResponse);
+            }
+
+            [Test]
             [Description("Test intended to reproduce the service flow for deleting an existing employee entity")]
             [Author("Aitor Arqué Arnaiz")]
             public void DeleteEmployeeEntity()

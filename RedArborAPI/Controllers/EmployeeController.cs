@@ -54,7 +54,7 @@ namespace RedArborAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside GetAllEmployees action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, $"Something went wrong inside GetAllEmployees action: {ex.Message}");
             }
         }
 
@@ -105,7 +105,7 @@ namespace RedArborAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside UpdateEmployee action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, $"Something went wrong inside UpdateEmployee action: {ex.Message}");
             }
         }
 
@@ -120,7 +120,7 @@ namespace RedArborAPI.Controllers
             catch(Exception ex)
             {
                 _logger.LogError($"Something went wrong inside DeleteEmployee action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, $"Something went wrong inside DeleteEmployee action: {ex.Message}");
             }
         }
 
@@ -166,7 +166,7 @@ namespace RedArborAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside AddEmployee action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, $"Something went wrong inside AddEmployee action: {ex.Message}");
             }
         }
     }

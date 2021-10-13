@@ -87,13 +87,14 @@ namespace RedArborAPI.Test.Integration_Tests
             [Test]
             [Description("Test intended to reproduce the service flow for getting an employee entity forcing an error ")]
             [Author("Aitor Arqué Arnaiz")]
-            [Ignore("Not working")]
+            [Ignore("not working correctly")]
             public void GetEmployeeEntityById_Exception()
             {
                 // Arrange
 
                 // Act & Assert
-                Assert.AreEqual(HttpStatusCode.NotFound, _employeeController.GetEmployeeByIdController(null));
+                var notFound = new NotFoundResult();
+                Assert.AreEqual(notFound ,_employeeController.GetEmployeeByIdController(null));
 
             }
 
