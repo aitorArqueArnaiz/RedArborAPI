@@ -39,7 +39,7 @@ namespace RedArborAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside GetEmployeeById action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, $"Something went wrong inside GetEmployeeById action: {ex.Message}");
             }
         }
 
@@ -59,7 +59,7 @@ namespace RedArborAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateEmployeeController(int? id, [FromBody] Employee e)
+        public IActionResult UpdateEmployeeController([FromBody] Employee e)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace RedArborAPI.Controllers
                     Username = e.Username
                 };
 
-                var addEmployeeResponse = _employeeService.UpdateEmployeeByIdAsync(id, employeeRequest);
+                var addEmployeeResponse = _employeeService.UpdateEmployeeByIdAsync(e.CompanyId, employeeRequest);
                 return Ok($"Employee {e.Username} has been succesfully updated. Response Id : {addEmployeeResponse.Result.Id}");
             }
             catch (Exception ex)

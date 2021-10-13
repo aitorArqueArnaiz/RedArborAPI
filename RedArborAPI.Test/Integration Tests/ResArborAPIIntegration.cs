@@ -7,6 +7,7 @@ using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.Infrastructure.Data.Repositories;
 using RedArborAPI.Infrastructure.Interfaces;
 using System;
+using System.Net;
 using static RedArborAPI.Domain.Shared.Enums;
 
 namespace RedArborAPI.Test.Integration_Tests
@@ -83,6 +84,20 @@ namespace RedArborAPI.Test.Integration_Tests
                 Assert.NotNull(addEmployeeResponse);
             }
 
+            [Test]
+            [Description("Test intended to reproduce the service flow for getting an employee entity forcing an error ")]
+            [Author("Aitor Arqué Arnaiz")]
+            [Ignore("Not working")]
+            public void GetEmployeeEntityById_Exception()
+            {
+                // Arrange
+
+                // Act & Assert
+                Assert.AreEqual(HttpStatusCode.NotFound, _employeeController.GetEmployeeByIdController(null));
+
+            }
+
         #endregion
-        }
+
+    }
 }

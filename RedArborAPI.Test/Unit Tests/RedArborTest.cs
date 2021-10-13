@@ -7,6 +7,7 @@ using RedArborAPI.DTOs.Employees;
 using RedArborAPI.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using static RedArborAPI.Domain.Shared.Enums;
 
@@ -93,7 +94,7 @@ namespace RedArborAPI.UnitTests.Test
                 // Assert
                 Assert.NotNull(deleteEmployeeResponse);
                 Assert.AreEqual(deleteEmployeeResponse.Result.Id, employeeModel.Id);
-        }
+            }
 
             [Test]
             [Description("Test intended to reproduce the service flow for updating an existing employee entity")]
@@ -127,7 +128,7 @@ namespace RedArborAPI.UnitTests.Test
                 Assert.NotNull(updateEmployeeResponse);
                 Assert.AreEqual(updateEmployeeResponse.Result.Id, employeeModel.CompanyId);
                 Assert.AreEqual(updateEmployeeResponse.Result.Name, "test user");
-        }
+            }
 
             [Test]
             [Description("Test intended to reproduce the service flow for getting an employee entity")]
@@ -161,7 +162,7 @@ namespace RedArborAPI.UnitTests.Test
                 Assert.AreEqual(getEmployeeResponse.Telephone, "Telephone");
                 Assert.AreEqual(getEmployeeResponse.UpdatedOn, Convert.ToDateTime("2000-01-01 00:00:00"));
                 Assert.AreEqual(getEmployeeResponse.Username, "Username");
-        }
+            }
 
             [Test]
             [Description("Test intended to reproduce the service flow for getting all existing employees")]
