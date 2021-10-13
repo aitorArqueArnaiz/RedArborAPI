@@ -179,6 +179,10 @@ namespace RedArborAPI.Business.Services
         /// <returns>Employee entity data structure.</returns>
         private Employee createEmployeeEntity(List<string> employeeFromDb)
         {
+            if(employeeFromDb == null || employeeFromDb.Count != 14)
+            {
+                return new Employee();
+            }
             return new Employee()
             {
                 CompanyId = int.Parse(employeeFromDb[0]),
