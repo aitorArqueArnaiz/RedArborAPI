@@ -5,8 +5,8 @@ public class ErrorHandlingFilter : ExceptionFilterAttribute
     public override void OnException(ExceptionContext context)
     {
         var exception = context.Exception;
-        //log your exception here
+        Serilog.Log.ForContext<ErrorHandlingFilter>().Error($"Error ocurred during execution of action {context.ActionDescriptor.DisplayName}. Error message {exception}");
 
-        context.ExceptionHandled = true; //optional 
+        context.ExceptionHandled = true; 
     }
 }
