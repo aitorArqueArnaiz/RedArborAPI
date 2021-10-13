@@ -40,7 +40,7 @@ namespace RedArborAPI.Business.Services
                     Password = model.Password,
                     PortalId = model.PortalId,
                     RoleId = model.RoleId,
-                    StatusId = model.StatusId,
+                    StatusId = (Domain.Shared.Enums.EmployeeStatus)model.StatusId,
                     Telephone = model.Telephone,
                     UpdatedOn = model.UpdatedOn,
                     Username = model.Username
@@ -85,7 +85,7 @@ namespace RedArborAPI.Business.Services
                 Password = model.Password,
                 PortalId = model.PortalId,
                 RoleId = model.RoleId,
-                StatusId = model.StatusId,
+                StatusId = (Domain.Shared.Enums.EmployeeStatus)model.StatusId,
                 Telephone = model.Telephone,
                 UpdatedOn = model.UpdatedOn,
                 Username = model.Username
@@ -136,7 +136,7 @@ namespace RedArborAPI.Business.Services
             return string.Format(string.Concat("INSERT INTO [Employees].[dbo].[Employee]",
                 "([CompanyId],[CreatedOn],[DeletedOn],[Email],[Fax],[Name],[Lastlogin],[Password],[PortalId],[RoleId],[StatusId],[Telephone],[UpdatedOn],[Username])",
                 "VALUES ({0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', {8}, {9}, {10}, '{11}', '{12}', '{13}')"), employee.CompanyId, employee.CreatedOn, employee.DeletedOn, employee.Email, employee.Fax, employee.Name,
-                employee.Lastlogin, employee.Password, employee.PortalId, employee.RoleId, employee.StatusId, employee.Telephone, employee.UpdatedOn, employee.Username);
+                employee.Lastlogin, employee.Password, employee.PortalId, employee.RoleId, (int)employee.StatusId, employee.Telephone, employee.UpdatedOn, employee.Username);
         }
 
         /// <summary>This method creates the SQl query to delete an existing employee in the data base.</summary>
@@ -171,7 +171,7 @@ namespace RedArborAPI.Business.Services
             return string.Format("UPDATE [Employees].[dbo].[Employee] SET [CompanyId] = {0} ,[CreatedOn] = '{1}', [DeletedOn] = '{2}', [Email] = '{3}', [Fax] = '{4}', [Name] = '{5}', [Lastlogin] = '{6}', " +
                 "[Password] = '{7}', [PortalId] = {8}, [RoleId] = {9}, [StatusId] = {10}, [Telephone] = '{11}', [UpdatedOn] = '{12}', [Username] = '{13}' " +
                 "WHERE CompanyId = {14}", employee.CompanyId, employee.CreatedOn, employee.DeletedOn, employee.Email, employee.Fax, employee.Name, employee.Lastlogin, employee.Password, employee.PortalId,
-                employee.RoleId, employee.StatusId, employee.Telephone, employee.UpdatedOn, employee.Username, id);
+                employee.RoleId, (int)employee.StatusId, employee.Telephone, employee.UpdatedOn, employee.Username, id);
         }
 
         /// <summary>This method creates an Employee entity.</summary>
@@ -191,7 +191,7 @@ namespace RedArborAPI.Business.Services
                 Password = employeeFromDb[7].Replace("'", string.Empty).Trim(),
                 PortalId = int.Parse(employeeFromDb[8]),
                 RoleId = int.Parse(employeeFromDb[9]),
-                StatusId = int.Parse(employeeFromDb[10]),
+                StatusId = (Domain.Shared.Enums.EmployeeStatus)int.Parse(employeeFromDb[10]),
                 Telephone = employeeFromDb[11].Replace("'", string.Empty).Trim(),
                 UpdatedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
                 Username = employeeFromDb[13].Replace("'", string.Empty).Trim()

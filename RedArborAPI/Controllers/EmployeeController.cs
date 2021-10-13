@@ -68,6 +68,11 @@ namespace RedArborAPI.Controllers
                     _logger.LogError("Employee object sent from client is null.");
                     return BadRequest("Employee object is null");
                 }
+                else if ((int)e.StatusId < 1 || (int)e.StatusId > 3)
+                {
+                    _logger.LogError("Employee status is incorrect.");
+                    return BadRequest("Employee status is incorrect");
+                }
 
                 if (!ModelState.IsValid)
                 {
@@ -88,7 +93,7 @@ namespace RedArborAPI.Controllers
                     Password = e.Password,
                     PortalId = e.PortalId,
                     RoleId = e.RoleId,
-                    StatusId = e.StatusId,
+                    StatusId = (int)e.StatusId,
                     Telephone = e.Telephone,
                     UpdatedOn = e.UpdatedOn,
                     Username = e.Username
@@ -149,7 +154,7 @@ namespace RedArborAPI.Controllers
                     Password = e.Password,
                     PortalId = e.PortalId,
                     RoleId = e.RoleId,
-                    StatusId = e.StatusId,
+                    StatusId = (int)e.StatusId,
                     Telephone = e.Telephone,
                     UpdatedOn = e.UpdatedOn,
                     Username = e.Username

@@ -8,6 +8,7 @@ using RedArborAPI.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using static RedArborAPI.Domain.Shared.Enums;
 
 namespace RedArborAPI.UnitTests.Test
 {
@@ -156,7 +157,7 @@ namespace RedArborAPI.UnitTests.Test
                 Assert.AreEqual(getEmployeeResponse.Password, "Password");
                 Assert.AreEqual(getEmployeeResponse.PortalId, 1);
                 Assert.AreEqual(getEmployeeResponse.RoleId, 2);
-                Assert.AreEqual(getEmployeeResponse.StatusId, 3);
+                Assert.AreEqual(getEmployeeResponse.StatusId, EmployeeStatus.Vacation);
                 Assert.AreEqual(getEmployeeResponse.Telephone, "Telephone");
                 Assert.AreEqual(getEmployeeResponse.UpdatedOn, Convert.ToDateTime("2000-01-01 00:00:00"));
                 Assert.AreEqual(getEmployeeResponse.Username, "Username");

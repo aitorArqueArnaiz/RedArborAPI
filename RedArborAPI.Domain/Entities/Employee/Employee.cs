@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using RedArborAPI.Domain.Base;
 using System;
+using static RedArborAPI.Domain.Shared.Enums;
 
 namespace RedArborAPI.Domain.Entities.Employee
 {
@@ -37,7 +38,7 @@ namespace RedArborAPI.Domain.Entities.Employee
             this.Password = string.Empty;
             this.PortalId = int.MinValue;
             this.RoleId = int.MinValue;
-            this.StatusId = int.MinValue;
+            this.StatusId = EmployeeStatus.Contracted;
             this.Telephone = string.Empty;
             this.UpdatedOn = new DateTime().Date;
             this.Username = string.Empty;
@@ -74,7 +75,7 @@ namespace RedArborAPI.Domain.Entities.Employee
         public int RoleId { get;  set; }
 
         [JsonProperty("StatusId")]
-        public int StatusId { get;  set; }
+        public EmployeeStatus StatusId { get;  set; }
 
         [JsonProperty("Telephone")]
         public string Telephone { get;  set; }

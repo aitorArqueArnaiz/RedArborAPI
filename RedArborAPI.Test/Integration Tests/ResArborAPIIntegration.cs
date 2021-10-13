@@ -7,6 +7,7 @@ using RedArborAPI.Domain.Entities.Employee;
 using RedArborAPI.Infrastructure.Data.Repositories;
 using RedArborAPI.Infrastructure.Interfaces;
 using System;
+using static RedArborAPI.Domain.Shared.Enums;
 
 namespace RedArborAPI.Test.Integration_Tests
 {
@@ -69,7 +70,7 @@ namespace RedArborAPI.Test.Integration_Tests
                     Password = "123456789",
                     PortalId = 9,
                     RoleId = 6,
-                    StatusId = 1,
+                    StatusId = EmployeeStatus.Contracted,
                     Telephone = "569347640",
                     UpdatedOn = new DateTime().ToUniversalTime(),
                     Username = "test user"
