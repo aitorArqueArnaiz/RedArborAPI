@@ -105,25 +105,7 @@ namespace RedArborAPI.Business.Services
         {
             var employee = _employeeRepository.GetAsync(GetEmployeeByIdSQLQueryString(id));
             var employeeClean = employee.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            var employeeEntity = new Employee()
-            {
-                CompanyId = int.Parse(employeeClean[0]),
-                CreatedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                DeletedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                Email = employeeClean[3].Replace("'", string.Empty).Trim(),
-                Fax = employeeClean[4].Replace("'", string.Empty).Trim(),
-                Name = employeeClean[5].Replace("'", string.Empty).Trim(),
-                Lastlogin = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                Password = employeeClean[7].Replace("'", string.Empty).Trim(),
-                PortalId = int.Parse(employeeClean[8]),
-                RoleId = int.Parse(employeeClean[9]),
-                StatusId = int.Parse(employeeClean[10]),
-                Telephone = employeeClean[11].Replace("'", string.Empty).Trim(),
-                UpdatedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                Username = employeeClean[13].Replace("'", string.Empty).Trim()
-            };
-
-            return employeeEntity;
+            return createEmployeeEntity(employeeClean);
         }
 
         public async Task<List<Employee>> GetAllEmployeesAsync()
@@ -134,23 +116,7 @@ namespace RedArborAPI.Business.Services
             foreach (var e in employees)
             {
                 var employeeClean = e.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                var employeeEntity = new Employee()
-                {
-                    CompanyId = int.Parse(employeeClean[0]),
-                    CreatedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                    DeletedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                    Email = employeeClean[3].Replace("'", string.Empty).Trim(),
-                    Fax = employeeClean[4].Replace("'", string.Empty).Trim(),
-                    Name = employeeClean[5].Replace("'", string.Empty).Trim(),
-                    Lastlogin = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                    Password = employeeClean[7].Replace("'", string.Empty).Trim(),
-                    PortalId = int.Parse(employeeClean[8]),
-                    RoleId = int.Parse(employeeClean[9]),
-                    StatusId = int.Parse(employeeClean[10]),
-                    Telephone = employeeClean[11].Replace("'", string.Empty).Trim(),
-                    UpdatedOn = Convert.ToDateTime(employeeClean[1].Replace("'", string.Empty).Trim()),
-                    Username = employeeClean[13].Replace("'", string.Empty).Trim()
-                };
+                var employeeEntity = createEmployeeEntity(employeeClean);
                 employeeEntities.Add(employeeEntity);
             }
 
@@ -206,6 +172,30 @@ namespace RedArborAPI.Business.Services
                 "[Password] = '{7}', [PortalId] = {8}, [RoleId] = {9}, [StatusId] = {10}, [Telephone] = '{11}', [UpdatedOn] = '{12}', [Username] = '{13}' " +
                 "WHERE CompanyId = {14}", employee.CompanyId, employee.CreatedOn, employee.DeletedOn, employee.Email, employee.Fax, employee.Name, employee.Lastlogin, employee.Password, employee.PortalId,
                 employee.RoleId, employee.StatusId, employee.Telephone, employee.UpdatedOn, employee.Username, id);
+        }
+
+        /// <summary>This method creates an Employee entity.</summary>
+        /// <param name="employeeFromDb">The employee string from data base.</param>
+        /// <returns>Employee entity data structure.</returns>
+        private Employee createEmployeeEntity(List<string> employeeFromDb)
+        {
+            return new Employee()
+            {
+                CompanyId = int.Parse(employeeFromDb[0]),
+                CreatedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                DeletedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                Email = employeeFromDb[3].Replace("'", string.Empty).Trim(),
+                Fax = employeeFromDb[4].Replace("'", string.Empty).Trim(),
+                Name = employeeFromDb[5].Replace("'", string.Empty).Trim(),
+                Lastlogin = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                Password = employeeFromDb[7].Replace("'", string.Empty).Trim(),
+                PortalId = int.Parse(employeeFromDb[8]),
+                RoleId = int.Parse(employeeFromDb[9]),
+                StatusId = int.Parse(employeeFromDb[10]),
+                Telephone = employeeFromDb[11].Replace("'", string.Empty).Trim(),
+                UpdatedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                Username = employeeFromDb[13].Replace("'", string.Empty).Trim()
+            };
         }
 
         #endregion
