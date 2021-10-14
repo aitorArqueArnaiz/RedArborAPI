@@ -59,14 +59,14 @@ namespace RedArborAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateEmployeeController(int id, [FromBody] Employee e)
+        public IActionResult UpdateEmployeeController(int? id, [FromBody] Employee e)
         {
             try
             {
-                if (e == null)
+                if (e == null || id == null)
                 {
                     _logger.LogError("Employee object sent from client is null.");
-                    return BadRequest("Employee object is null");
+                    return BadRequest("Employee object or employee Id is null");
                 }
                 else if ((int)e.StatusId < 1 || (int)e.StatusId > 3)
                 {
@@ -112,6 +112,11 @@ namespace RedArborAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteEmployeeController(int? id)
         {
+            if (id == null)
+            {
+                _logger.LogError("Employee Id sent from client is null.");
+                return BadRequest("Employee Id is null");
+            }
             try
             {
                 _employeeService.DeleteEmployeeByIdAsync(id);
