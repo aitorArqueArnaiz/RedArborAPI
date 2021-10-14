@@ -59,7 +59,7 @@ namespace RedArborAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateEmployeeController([FromBody] Employee e)
+        public IActionResult UpdateEmployeeController(int id, [FromBody] Employee e)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace RedArborAPI.Controllers
                     Username = e.Username
                 };
 
-                var addEmployeeResponse = _employeeService.UpdateEmployeeByIdAsync(e.CompanyId, employeeRequest);
+                var addEmployeeResponse = _employeeService.UpdateEmployeeByIdAsync(id, employeeRequest);
                 return Ok($"Employee {e.Username} has been succesfully updated. Response Id : {addEmployeeResponse.Result.Id}");
             }
             catch (Exception ex)
