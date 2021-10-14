@@ -29,18 +29,18 @@ namespace RedArborAPI.Domain.Entities.Employee
         public Employee()
         {
             this.CompanyId = int.MinValue;
-            this.CreatedOn = new DateTime().Date;
-            this.DeletedOn = new DateTime().Date;
+            this.CreatedOn = string.Empty;
+            this.DeletedOn = string.Empty;
             this.Email = string.Empty;
             this.Fax = string.Empty;
             this.Name = string.Empty;
-            this.Lastlogin = new DateTime().Date;
+            this.Lastlogin = string.Empty;
             this.Password = string.Empty;
             this.PortalId = int.MinValue;
             this.RoleId = int.MinValue;
             this.StatusId = EmployeeStatus.Contracted;
             this.Telephone = string.Empty;
-            this.UpdatedOn = new DateTime().Date;
+            this.UpdatedOn = string.Empty;
             this.Username = string.Empty;
         }
 
@@ -48,10 +48,10 @@ namespace RedArborAPI.Domain.Entities.Employee
         public int CompanyId { get;  set; }
 
         [JsonProperty("CreatedOn")]
-        public DateTime? CreatedOn { get;  set; }
+        public string CreatedOn { get;  set; }
 
         [JsonProperty("DeletedOn")]
-        public DateTime? DeletedOn { get;  set; }
+        public string DeletedOn { get;  set; }
 
         [JsonProperty("Email")]
         public string Email { get;  set; }
@@ -63,7 +63,7 @@ namespace RedArborAPI.Domain.Entities.Employee
         public string Name { get;  set; }
 
         [JsonProperty("Lastlogin")]
-        public DateTime? Lastlogin { get;  set; }
+        public string Lastlogin { get;  set; }
 
         [JsonProperty("Password")]
         public string Password { get;  set; }
@@ -81,7 +81,7 @@ namespace RedArborAPI.Domain.Entities.Employee
         public string Telephone { get;  set; }
 
         [JsonProperty("UpdatedOn")]
-        public DateTime? UpdatedOn { get;  set; }
+        public string UpdatedOn { get;  set; }
 
         [JsonProperty("Username")]
         public string Username { get;  set; }

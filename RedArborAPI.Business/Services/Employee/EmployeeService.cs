@@ -187,18 +187,18 @@ namespace RedArborAPI.Business.Services
             return new Employee()
             {
                 CompanyId = int.Parse(employeeFromDb[0]),
-                CreatedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
-                DeletedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                CreatedOn = employeeFromDb[1].Replace("'", string.Empty).Trim(),
+                DeletedOn = employeeFromDb[1].Replace("'", string.Empty).Trim(),
                 Email = employeeFromDb[3].Replace("'", string.Empty).Trim(),
                 Fax = employeeFromDb[4].Replace("'", string.Empty).Trim(),
                 Name = employeeFromDb[5].Replace("'", string.Empty).Trim(),
-                Lastlogin = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                Lastlogin = employeeFromDb[1].Replace("'", string.Empty).Trim(),
                 Password = employeeFromDb[7].Replace("'", string.Empty).Trim(),
                 PortalId = int.Parse(employeeFromDb[8]),
                 RoleId = int.Parse(employeeFromDb[9]),
                 StatusId = (Domain.Shared.Enums.EmployeeStatus)int.Parse(employeeFromDb[10]),
                 Telephone = employeeFromDb[11].Replace("'", string.Empty).Trim(),
-                UpdatedOn = Convert.ToDateTime(employeeFromDb[1].Replace("'", string.Empty).Trim()),
+                UpdatedOn = employeeFromDb[1].Replace("'", string.Empty).Trim(),
                 Username = employeeFromDb[13].Replace("'", string.Empty).Trim()
             };
         }

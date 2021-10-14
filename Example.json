@@ -1,16 +1,16 @@
 {
   "CompanyId": 189,
-  "CreatedOn": "2021-10-13T07:48:03.289Z",
-  "DeletedOn": "2021-10-13T07:48:03.289Z",
+  "CreatedOn": "2000-01-01 00:00:00",
+  "DeletedOn": "2000-01-01 00:00:00",
   "Email": "test1@test.test.tmp",
   "Fax": "000.000.000",
   "Name": "test1",
-  "Lastlogin": "2021-10-13T07:48:03.289Z",
+  "Lastlogin": "2000-01-01 00:00:00",
   "Password": "user_test",
   "PortalId": 1,
   "RoleId": 1,
   "StatusId": 1,
   "Telephone": "000.000.000",
-  "UpdatedOn": "2021-10-13T07:48:03.289Z",
+  "UpdatedOn": "2000-01-01 00:00:00",
   "Username": "user test1"
 }

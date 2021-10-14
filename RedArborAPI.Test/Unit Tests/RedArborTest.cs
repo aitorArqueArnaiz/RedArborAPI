@@ -53,18 +53,18 @@ namespace RedArborAPI.UnitTests.Test
                 AddEmployeeRequest employeeModel = new AddEmployeeRequest()
                 {
                     CompanyId = random.Next(0, 9999),
-                    CreatedOn = new DateTime().ToUniversalTime(),
-                    DeletedOn = new DateTime().ToUniversalTime(),
+                    CreatedOn = "2000-01-01 00:00:00",
+                    DeletedOn = "2000-01-01 00:00:00",
                     Email = "test@gmail.com",
                     Fax = "123.456.789",
                     Name = "test",
-                    Lastlogin = new DateTime().ToUniversalTime(),
+                    Lastlogin = "2000-01-01 00:00:00",
                     Password = "123456789",
                     PortalId = 9,
                     RoleId = 6,
                     StatusId = 1,
                     Telephone = "569347640",
-                    UpdatedOn = new DateTime().ToUniversalTime(),
+                    UpdatedOn = "2000-01-01 00:00:00",
                     Username = "test user"
                 };
 
@@ -120,18 +120,18 @@ namespace RedArborAPI.UnitTests.Test
                 UpdateEmployeeRequest employeeModel = new UpdateEmployeeRequest()
                 {
                     CompanyId = random.Next(0, 9999),
-                    CreatedOn = new DateTime().ToUniversalTime(),
-                    DeletedOn = new DateTime().ToUniversalTime(),
+                    CreatedOn = "2000-01-01 00:00:00",
+                    DeletedOn = "2000-01-01 00:00:00",
                     Email = "test@gmail.com",
                     Fax = "503.576.579",
                     Name = "test",
-                    Lastlogin = new DateTime().ToUniversalTime(),
+                    Lastlogin = "2000-01-01 00:00:00",
                     Password = "123456789",
                     PortalId = 3,
                     RoleId = 3,
                     StatusId = 0,
                     Telephone = "569347640",
-                    UpdatedOn = new DateTime().ToUniversalTime(),
+                    UpdatedOn = "2000-01-01 00:00:00",
                     Username = "test user"
                 };
 
@@ -163,18 +163,18 @@ namespace RedArborAPI.UnitTests.Test
                 // Assert
                 Assert.NotNull(getEmployeeResponse);
                 Assert.AreEqual(getEmployeeResponse.CompanyId, 56);
-                Assert.AreEqual(getEmployeeResponse.CreatedOn, Convert.ToDateTime("2000-01-01 00:00:00"));
-                Assert.AreEqual(getEmployeeResponse.DeletedOn, Convert.ToDateTime("2000-01-01 00:00:00"));
+                Assert.AreEqual(getEmployeeResponse.CreatedOn, "2000-01-01 00:00:00");
+                Assert.AreEqual(getEmployeeResponse.DeletedOn, "2000-01-01 00:00:00");
                 Assert.AreEqual(getEmployeeResponse.Email, "Email");
                 Assert.AreEqual(getEmployeeResponse.Fax, "Fax");
                 Assert.AreEqual(getEmployeeResponse.Name, "Name");
-                Assert.AreEqual(getEmployeeResponse.Lastlogin, Convert.ToDateTime("2000-01-01 00:00:00"));
+                Assert.AreEqual(getEmployeeResponse.Lastlogin, "2000-01-01 00:00:00");
                 Assert.AreEqual(getEmployeeResponse.Password, "Password");
                 Assert.AreEqual(getEmployeeResponse.PortalId, 1);
                 Assert.AreEqual(getEmployeeResponse.RoleId, 2);
                 Assert.AreEqual(getEmployeeResponse.StatusId, EmployeeStatus.Vacation);
                 Assert.AreEqual(getEmployeeResponse.Telephone, "Telephone");
-                Assert.AreEqual(getEmployeeResponse.UpdatedOn, Convert.ToDateTime("2000-01-01 00:00:00"));
+                Assert.AreEqual(getEmployeeResponse.UpdatedOn, "2000-01-01 00:00:00");
                 Assert.AreEqual(getEmployeeResponse.Username, "Username");
             }
 

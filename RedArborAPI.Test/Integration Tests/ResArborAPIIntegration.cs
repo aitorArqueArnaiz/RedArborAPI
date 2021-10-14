@@ -62,18 +62,18 @@ namespace RedArborAPI.Test.Integration_Tests
                 Employee employee = new Employee()
                 {
                     CompanyId = random.Next(0, 9999),
-                    CreatedOn = new DateTime().ToUniversalTime(),
-                    DeletedOn = new DateTime().ToUniversalTime(),
+                    CreatedOn = "2000-01-01 00:00:00",
+                    DeletedOn = "2000-01-01 00:00:00",
                     Email = "test@gmail.com",
                     Fax = "123.456.789",
                     Name = "test",
-                    Lastlogin = new DateTime().ToUniversalTime(),
+                    Lastlogin = "2000-01-01 00:00:00",
                     Password = "123456789",
                     PortalId = 9,
                     RoleId = 6,
                     StatusId = EmployeeStatus.Contracted,
                     Telephone = "569347640",
-                    UpdatedOn = new DateTime().ToUniversalTime(),
+                    UpdatedOn = "2000-01-01 00:00:00",
                     Username = "test user"
                 };
 
